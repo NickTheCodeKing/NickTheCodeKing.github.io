@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <div class="container1">
+        <ul class="particles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
+    <div id="wrapper">
+        <!-- <div class="fixed-navbar">
+            <li> <a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </div> -->
+        <div class="wrapper" id="header-wrapper">
+            <div class="header animate">
+                <div class="introduction">
+                    <h1>Hi, I'm <span>Nicholas</span></h1>
+                    <p>I'm a Computer Science Student</p>
+                </div>
+                <div class="nav animate">
+                    <ul class="animate">
+                        <li> <a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrapper" id="about-wrapper">
+            <div class="about animate" id="about">
+                <div class="about-col-1">
+                    <img src="/Images/Professional_Picture.PNG" width="500px" heigth="500px">
+                </div>
+                <div class="about-col-2">
+                    <h1>About</h1>
+                    <p class="description"> As a 21-year-old college student, I'm currently in my junior year,
+                                            pursuing a degree in Computer Science. Knowledge holds immense value to me, 
+                                            and I have a deep-rooted passion for continuous learning. I thrive on seeking 
+                                            out new opportunities to expand my skill set and stay at the forefront of technological advancements.
+                                            <br><br>
+                                            I'm captivated by the art of media analysis. Whether it's diving into fictional books, comics, TV shows, or movies, 
+                                            I find joy in going beyond the surface. Uncovering the hidden themes and allegories that connect to real-life 
+                                            experiences is my passion.
+                                            <br><br>
+                                            I also have a competitive side that shines through my favorite pastime—Rocket League. This game has not only captivated 
+                                            my interest but also provided me with valuable lessons in perseverance, strategic thinking, and teamwork. Achieving a 
+                                            top 1% ranking among players has been a testament to my dedication and drive for excellence.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper" id="skills-wrapper">
+            <div class="skills animate" id="skills">
+                <h1>Skills</h1>
+                <ul class="option-titles">
+                    <li class="options active-option" onclick="opentab('back-end')">Back-End</li>
+                    <li class="options" onclick="opentab('front-end')">Front-End</li>
+                    <li class="options" onclick="opentab('tools-and-frameworks')">Tools/Frameworks</li>
+                </ul>
+                <ul class="option-contents active-tab" id="back-end">
+                    <li><img src="/Images/Java_Logo.png"></li>
+                    <li><img src="/Images/C_Logo.png"></li>
+                    <li><img src="/Images/Assembly_Language_Logo.png"></li>
+                    <li><img src="/Images/Python_Logo.png"></li>
+                    <li><img src="/Images/SQL_Logo.png"></li>
+                </ul>
+                <ul class="option-contents" id="front-end">
+                    <li><img src="/Images/HTML5_Logo.svg.png" id="html-logo"></li>
+                    <li><img src="/Images/CSS_Logo.png" id="css-logo"></li>
+                    <li><img src="/Images/JavaScript_Logo.png" id="javascript-logo"></li>
+                </ul>
+                <ul class="option-contents" id="tools-and-frameworks">
+                    <li><img src="/Images/Git_Logo.png" id="git-logo"></li>
+                    <li><img src="/Images/GitHub_Logo.png" id="github-logo"></li>
+                    <li><img src="/Images/VSCode_Logo.svg.png"></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="wrapper" id="projects-wrapper">
+            <div class="projects animate" id="projects">
+                <h1>Projects</h1>
+                <div class="projects-slider">
+                    <div id="project1">
+                        <a href="#"><h2>Interpolation Search Analysis</h2></a>
+                        <img src="/Images/Interpolation_Search_PP_Screenshot.PNG" class="project-image">
+                    </div>
+    
+                    <!-- <div id="project2">
+                        <img src="/Images/PlaceHolder.png" class="project-image">
+                    </div> -->
+    
+                    <!-- <div id="project3">
+                        <img src="/Images/PlaceHolder.png" class="project-image">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="wrapper" id="contact-wrapper">
+            <div class="contact animate" id="contact">
+                <h1>Contact Me</h1>
+                <div class="contact-form">
+                    <p>nicholasdobard@gmail.com</p>
+                    <p class="linkedin"><a target="_blank" href="https://www.linkedin.com/in/nicholas-dobard-ab93b124b/">LinkedIn</a></p>
+                    <form name="contact-me" id="contact-form" method="POST" action="https://script.google.com/macros/s/AKfycbzdjwqutkIZ5QpeIM6JrHHH19_CLEbJBkYgJ1dKr4eNOBIBSAzCtzyjX-JtgsGbfuw4/exec">
+                        <input name="Name" type="text" id="name" placeholder="Name" required>
+                        <input name="Email" type="email" id="email" placeholder="Email" required>
+                        <textarea name="Message" rows="6" placeholder="Message"></textarea>
+                        <div class="button">
+                            <div class="lds-ring hide" id="lds-ring"><div></div><div></div><div></div><div></div></div>
+                            <button type="submit" class="btn" id="submit-button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-form-success">
+                    <span class="animate" id="success-msg"></span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="footer-wrapper">
+            <div class="footer">
+                <div class="copyright">
+                    <p>Copyright 2023 © Nicholas Dobard</p>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    
+</body>
+<script type="text/javascript" src="portfolio.js"></script>
+</html>
