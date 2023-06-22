@@ -8,6 +8,17 @@ DESCRIPTION
 To access my website, click the link below. 
 https://nickthecodeking.github.io/
 
+Upcoming Updates
+- Full page background animations
+- Dark/Light Mode
+- On-site Project descriptions
+- "Sticky" NavBar in top right to better traverse website with minimal scrolling
+
+Upcoming Fixes
+- Improve display for smaller screens (phones, tablets, etc.)
+- Increase mobile functionality and compatibility
+- Resize Projects Slider depending on amount of projects (no need to scroll if there is only one project.)
+
 AUTHOR
 - Nicholas Dobard
 - NickTheCodeKing
